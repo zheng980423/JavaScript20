@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MenuandModal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="https://randomuser.me/api/portraits/men/70.jpg" alt="user" />
+      </div>
+        <ul>
+          <li><a href="#">主页</a></li>
+          <li><a href="#">简历</a></li>
+          <li><a href="#">博客</a></li>
+          <li><a href="#">联系我</a></li>
+        </ul>
+     
+    </nav>
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <h1>我的主页</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        voluptates quas sequi distinctio obcaecati atque vero harum quisquam
+        modi suscipit?
+      </p>
+      <button class="cta-btn" id="open">注册</button>
+    </header>
+    <div class="container">
+      <h2>关于</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim quod
+        consectetur doloribus recusandae vel illo, debitis quam tempore placeat
+        veritatis, quo quidem tenetur rerum, dolorem distinctio libero atque
+        hic?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores velit
+        nesciunt ea distinctio qui sequi consectetur, illum quae omnis modi.
+      </p>
+
+      <h2>了解更多</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+        voluptatibus deleniti maiores suscipit magnam atque eius excepturi
+        aspernatur necessitatibus fugit labore fugiat, in, dolorem nulla omnis
+        asperiores vero, qui corporis at veritatis obcaecati. Sit veritatis
+        culpa distinctio, sint fuga commodi?
+      </p>
+
+      <h2>权益</h2>
+      <ul>
+        <li>终身使用权限</li>
+        <li>30天免费退款</li>
+        <li>量身定做的解决方案</li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi debitis,
+        laudantium nulla, fugit saepe consequatur esse tenetur quam ab commodi
+        numquam maxime reprehenderit. Laboriosam distinctio explicabo id
+        veritatis soluta porro odio fugit fuga sapiente dolores, dolorum ad ea
+        temporibus doloremque totam quos incidunt blanditiis. Sapiente nisi est
+        eligendi expedita dolores blanditiis ea quam officia repudiandae, vitae
+        numquam esse obcaecati reiciendis, architecto dolorem sunt aliquid
+        possimus, suscipit consequatur libero necessitatibus id.
+      </p>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal-container">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>登录</h3>
+        </div>
+        <div class="modal-content">
+          <p>注册获得更多权益！</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">姓名</label>
+              <input
+               type="text" 
+               id="name"
+              class="form-input" 
+              placeholder="张三/李四" />
+            </div>
+            <div>
+              <label for="email">邮件</label>
+              <input type="email" id="email" class="form-input" placeholder="a@test.com" />
+            </div>
+            <div>
+              <label for="password">密码</label>
+              <input
+                type="password"
+                id="password"
+                class="form-input"
+                placeholder="密码不小于6位"
+              />
+            </div>
+            <div>
+              <label for="password2">确认密码</label>
+              <input
+                type="password"
+                id="password2"
+                class="form-input"
+                placeholder="两次输入需保持一致"
+              />
+            </div>
+            <input type="submit" value="提交" class="submit-btn"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
